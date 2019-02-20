@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.0)
 
-option( INSTALL_QANIMATION_PLUGIN "Check to install qAnimation plugin" OFF )
+option( INSTALL_QANIMATION_PLUGIN "Check to install qAnimation plugin" ON )
 
 # CloudCompare 'ANIMATION' plugin
 if (INSTALL_QANIMATION_PLUGIN)

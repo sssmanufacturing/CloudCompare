@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.0)
 
-option( INSTALL_QADDITIONAL_IO_PLUGIN "Check to install qAdditionalIO plugin" OFF )
+option( INSTALL_QADDITIONAL_IO_PLUGIN "Check to install qAdditionalIO plugin" ON )
 
 if (INSTALL_QADDITIONAL_IO_PLUGIN)
 	project( QADDITIONAL_IO_PLUGIN )

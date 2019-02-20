@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.0)
 
-option( INSTALL_QRANSAC_SD_PLUGIN "Check to install qRansac_SD (Shape Detection) plugin" OFF )
+option( INSTALL_QRANSAC_SD_PLUGIN "Check to install qRansac_SD (Shape Detection) plugin" ON )
 
 # CloudCompare 'Ransac Shape Detection' plugin
 if (INSTALL_QRANSAC_SD_PLUGIN)

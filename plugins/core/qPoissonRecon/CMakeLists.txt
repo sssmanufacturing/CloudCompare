@@ -1,12 +1,12 @@
 cmake_minimum_required(VERSION 3.0)
 
-option( INSTALL_QPOISSON_RECON_PLUGIN "Check to install qPoissonRecon plugin" OFF )
+option( INSTALL_QPOISSON_RECON_PLUGIN "Check to install qPoissonRecon plugin" ON )
 
 # CloudCompare 'PoissonRecon' plugin
 if (INSTALL_QPOISSON_RECON_PLUGIN)
 	project( QPOISSON_RECON_PLUGIN )
 		
-	add_subdirectory (PoissonReconLib)
+	#add_subdirectory (PoissonReconLib)
 	
 	include( ../../CMakePluginTpl.cmake )
 	
@@ -14,7 +14,7 @@ if (INSTALL_QPOISSON_RECON_PLUGIN)
 	include_directories( ${QPOISSON_RECON_LIB_SOURCE_DIR}/Src )
 	include_directories( ${QPOISSON_RECON_LIB_SOURCE_DIR}/Src_CC_wrap )
 
-	option( POISSON_RECON_WITH_OPEN_MP "Check to compile PoissonRecon plugin with OpenMP support" OFF )
+	option( POISSON_RECON_WITH_OPEN_MP "Check to compile PoissonRecon plugin with OpenMP support" ON )
 	
 	if ( POISSON_RECON_WITH_OPEN_MP )
 		find_package(OpenMP)

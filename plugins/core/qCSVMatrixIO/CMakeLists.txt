@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.0)
 
-option( INSTALL_QCSV_MATRIX_IO_PLUGIN "Check to install qCSVMatrix I/O plugin" OFF )
+option( INSTALL_QCSV_MATRIX_IO_PLUGIN "Check to install qCSVMatrix I/O plugin" ON )
 
 # CloudCompare CSV Matrix I/O plugin
 if (INSTALL_QCSV_MATRIX_IO_PLUGIN)

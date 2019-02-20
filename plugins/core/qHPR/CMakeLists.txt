@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.0)
 
-option( INSTALL_QHPR_PLUGIN "Check to install qHPR plugin" OFF )
+option( INSTALL_QHPR_PLUGIN "Check to install qHPR plugin" ON )
 
 # CloudCompare 'HPR' plugin
 if (INSTALL_QHPR_PLUGIN)
